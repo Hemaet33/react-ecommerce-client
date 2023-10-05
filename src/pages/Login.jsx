@@ -108,7 +108,7 @@ const Login = () => {
           <Input type="password" placeholder="Password"  onChange={(e)=>setPassword(e.target.value)} />
           <Button type='submit' disabled={isFetching}>LOGIN</Button>
           {error && <Error>Something went wrong</Error>}
-          <Linker>Forgot password?</Linker>
+          <Linker href='/admin'>Are you an admin?</Linker>
           <Link style={{margin:"auto",backgroundColor:"yellow",padding:"5px 20px",textDecoration:"none",color:"teal"}} to="/register">Register</Link>
         </Form>
       </Wrapper>
